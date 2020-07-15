@@ -11,6 +11,11 @@ namespace ToDoList
     public static void Main()
     {
       Console.WriteLine("Welcome to the To Do List");
+      Start();
+    }
+
+    public static void Start()
+    {
       Console.WriteLine("Would you like to add an item to your list or view your list? Add/View");
       string userResponse = Console.ReadLine();
 
@@ -32,7 +37,7 @@ namespace ToDoList
       {
         Console.WriteLine("Please enter either 'Add' or 'View'");
       }
-      Main();
+      Start();
     }
   }
 }
