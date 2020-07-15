@@ -1,5 +1,7 @@
-namespace ToDoList.Models
 using System.Collections.Generic;
+using System;
+
+namespace ToDoList.Models
 {
   public class Item
   {
@@ -11,6 +13,7 @@ using System.Collections.Generic;
     {
       Description = description;
       _instances.Add(this);
+      
     }
 
     public static List<Item> GetAll()
